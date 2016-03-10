@@ -1,20 +1,16 @@
 <div class="container" ng-controller="editMemberCtrl">
     <div class="col-sm-8 col-sm-offset-2">
-
-        <!--
         {!!
             Form::model("[[ mem ]]", array(
                 'class'     => 'form',
                 'files'     => true,
                 'action'    => array(
                     'MemberController@update',
-                    2
+                    '[[mem.id]]'
                 ),
                 'method'    => 'PATCH'
             ))
         !!}
-    -->
-        <form method="PATCH" action="api/v1/member/[[ mem.id ]]" enctype="multipart/form-data">
 
         <div class="form-group">
         {!!
